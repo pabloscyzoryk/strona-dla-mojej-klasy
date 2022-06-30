@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+    transition: 0.2s ease-in-out;
+}
+
+label {
+    color: white;
+    position: relative;
+    left: 25%;
+}
+
+option {
+    outline: none;
+    border-radius: none;
+    font-family: 'Arial';
+}
+
+select, select:active, select:focus {
+    font-family: 'Arial';
+    margin-top: 3vh;
+    outline: none;
+    width: 18vw;
+    height: 5vh;
+    font-size: 2vh;
+    padding: 1vh;
+    border: none;
+}
+
+input {
+    margin-top: 3vh;
+    width: 8vw;
+    height: 5vh;
+    font-size: 2.5vh;
+    border-radius: 6px;
+    border: none;
+    transition: ease-in-out 0.1s;
+    position: relative;
+    left: 25%;
+    
+}
+
+input:hover {
+    background: rgb(232, 223, 223);
+    cursor: pointer;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5vw;
+    grid-auto-rows: minmax(20vw, auto);
+    margin: 5vw;
+}
+
+.subject p {
+    color: white;
+    font-size: 3vh;
+    margin-bottom: 1vw;
+}
+
+.subject {
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+}
+
+.witryny {
+    background: rgb(9, 136, 220);
+}
+
+.teoria {
+    background: rgb(255, 25, 56);
+}
+
+.pracownia {
+    background: rgb(13, 215, 30);
+}
+
+.informatyka {
+    background: rgb(254, 221, 34);
+}
+
+.ppa {
+    background: rgb(190, 188, 177);
+}
+
+.pmigk {
+    background: rgb(245, 132, 39);
+}
+
+.projekty {
+    background: rgb(39, 56, 245);
+}
+
+.inne {
+    background: rgb(245, 39, 228);
+}
+
+.temp {
+    background: rgb(77, 245, 39);
+}
+
+.fa-solid {
+    position: absolute;
+    font-size: 2vw;
+    right: 5vw;
+    top: 1vw;
+    color: black;
+    transition: ease-in-out 0.1s;
+    cursor: pointer;
+}
+
+.fa-solid:hover {
+    font-size: 2.1vw;
+}
+
+.body-dark {
+    background: black;
+}
+
+.icon-dark {
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5vw;
+        grid-auto-rows: minmax(50vw, auto);
+        margin: 5vw;
+    }
+    input {
+        width: 30vw;
+        left: 1vw;
+    }
+    label {
+        left: -5%;
+    }
+    select {
+        width: 50vw;
+    }
+    option {
+        width: 50vw;
+    }
+    select, select:active, select:focus {
+        width: 50vw;
+    }
+    .fa-solid {
+        font-size: 5em;
+        position: relative;
+    }
+    .icon-dark {
+        font-size: 5em;
+        position: relative;
+    }
+    body {
+        text-align: center;
+    }
+    .fa-solid:hover {
+        font-size: 6em;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1084px) {
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    input {
+        width: 20vw;
+        left: -1vw;
+    }
+    label {
+        left: -5%;
+    }
+    option {
+        width: 50vw;
+    }
+    select, select:active, select:focus {
+        width: 25vw;
+    }
+    .fa-solid {
+        font-size: 5em;
+        position: relative;
+    }
+    .icon-dark {
+        font-size: 5em;
+        position: relative;
+    }
+    body {
+        text-align: center;
+    }
+    .fa-solid:hover {
+        font-size: 6em;
+    }
+}
+
+@media screen and (max-width: 1083px) and (min-width: 769px) {
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .subject p {
+        font-size: 1.5em;
+        position: relative;
+        top: 1vh;
+    }
+    input {
+        width: 20vw;
+        left: -1vw;
+        bottom: 1.5vw;
+    }
+    label {
+        left: -5%;
+    }
+    option {
+        width: 50vw;
+    }
+    select, select:active, select:focus {
+        width: 25vw;
+    }
+    .fa-solid {
+        font-size: 5em;
+        position: relative;
+    }
+    .icon-dark {
+        font-size: 5em;
+        position: relative;
+    }
+    body {
+        text-align: center;
+    }
+    .fa-solid:hover {
+        font-size: 6em;
+    }
+}
